@@ -5,15 +5,17 @@ import classes from './Header.module.css';
 const Header = () => {
 	return (
 		<>
-			<header className={`pl-20 py-10 flex sm:flex-col md:flex-row items-center ${classes.Header}`}>
-				<div className="mr-auto">
+			<header
+				className={`flex py-5 pl-5 md:pl-20 md:py-10 flex-col md:flex-row items-center ${classes.Header}`}
+			>
+				<div className="mr-auto text-center md:text-left">
 					<h1 className="uppercase text-red-800">
 						<span className="">Nous valorisons la</span>
 						<span className="block text-5xl leading-10">
 							Clarté <span>&rsaquo;</span>
 						</span>
 					</h1>
-					<p className="my-5 w-4/6 text-sm font-normal">
+					<p className="my-5 md:w-4/6 text-sm font-normal">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem a eos, iste
 						reiciendis unde, amet ea, officia vero eveniet debitis praesentium. Quisquam accusamus
 						harum veniam atque deleniti. Illo, nemo.
@@ -26,7 +28,7 @@ const Header = () => {
 					<img src={Pen} alt="Pen" />
 				</div>
 			</header>
-			<div className="w-full">
+			<div className="max-w-full">
 				<img src={Houses} alt="houses" className="max-w-full object-cover" />
 			</div>
 		</>

@@ -2,11 +2,11 @@ import Logo from '../../assests/logo.png';
 
 const Navbar = () => {
 	return (
-		<nav class="bg-white sm:px-4 md:px-20 py-4">
+		<nav class="bg-white sm:px-4 md:px-20 py-4 max-w-full">
 			<div class="container flex flex-wrap items-center mx-auto">
 				<a href="/" class="flex items-center mr-auto">
-					<img src={Logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-					<span class="self-center text-xl font-semibold whitespace-nowrap uppercase">
+					<img src={Logo} class="mr-3 h-6 sm:h-9" alt="Logo" />
+					<span class="self-center text-xs md:text-xl font-semibold whitespace-nowrap uppercase">
 						Barbe & Cimon Notaires
 					</span>
 				</a>
@@ -81,9 +81,11 @@ const Navbar = () => {
 								Contact
 							</a>
 						</li>
+						<li className="flex items-center justify-center">
+							<button className="bg-transparent border-0 outline-none uppercase ">EN</button>
+						</li>
 					</ul>
 				</div>
-				<button className="bg-transparent border-0 outline-none md:text-sm">EN</button>
 			</div>
 		</nav>
 	);
