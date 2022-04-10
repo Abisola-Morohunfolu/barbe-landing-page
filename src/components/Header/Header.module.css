@@ -1,0 +1,9 @@
+.Header {
+	background: #fff;
+	/* background-image: url('../../assests/bg-houses.png'); */
+	background-image: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 150, 146, 0.631) 100%
+	);
+}
